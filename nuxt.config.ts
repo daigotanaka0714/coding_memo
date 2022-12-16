@@ -4,5 +4,5 @@ export default defineNuxtConfig({
     shim: false,
     strict: true,
     typeCheck: true
-  },
+  }
 })
