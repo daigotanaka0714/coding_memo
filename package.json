@@ -11,6 +11,7 @@
     "lint:fix": "yarn lint . --fix"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.3.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "eslint": "^8.29.0",
     "nuxt": "3.0.0",

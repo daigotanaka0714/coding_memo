@@ -4,5 +4,10 @@ export default defineNuxtConfig({
     shim: false,
     strict: true,
     typeCheck: true
-  }
+  },
+  modules: ["@nuxt/content"],
+  srcDir: "src/",
+  content: {
+    sources: [path.join(__dirname, "content")],
+  },
 })
