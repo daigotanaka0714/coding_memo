@@ -4,7 +4,7 @@
       <div class="w-full h-full flex flex-col items-start justify-between container mx-auto py-8 px-8 lg:px-4 xl:px-0">
         <div class="flex-1 flex flex-col items-start justify-center">
           <h1 class="text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12 text-center md:text-left">
-            Comming Soon
+            Coming Soon
           </h1>
         </div>
         <div class="w-full flex items-center justify-center md:justify-end">
