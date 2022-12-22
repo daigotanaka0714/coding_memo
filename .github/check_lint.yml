@@ -1,10 +1,10 @@
-name: Build test
+name: Check lint and format
 
 on:
   pull_request:
 
 jobs:
-  build-test:
+  check-lint-and-format:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,14 +13,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: 16
           cache: 'npm'
 
       - name: Install packages
         run: yarn install --immutable --immutable-cache --check-cache
 
-      - name: Build
-        run: yarn build
+      - name: ESLint
+        run: yarn lint
+
+      - name: Prettier
+        run: yarn format
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
