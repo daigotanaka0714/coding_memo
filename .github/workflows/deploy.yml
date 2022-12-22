@@ -28,7 +28,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v1
       - name: Install dependencies
-        run: npm i
+        run: yarn install
+      - name: Lint
+        run: yarn lint
       - name: Static HTML export with Nuxt
         run: NUXT_APP_CDN_URL=https://daigotanaka0714.github.io/ yarn generate
       - name: Upload artifact
