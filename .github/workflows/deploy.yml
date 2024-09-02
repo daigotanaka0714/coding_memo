@@ -32,7 +32,7 @@ jobs:
       - name: Static HTML export with Nuxt
         run: NUXT_APP_CDN_URL=https://daigotanaka0714.github.io/ yarn generate
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
